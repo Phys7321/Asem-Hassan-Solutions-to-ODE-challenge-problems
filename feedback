@@ -1,3 +1,4 @@
 Feedback 
 10.5
 Your programs run and appear to produce correct results. I would however look over problem 2.3 again. You ended up with a height of 135 m giving a 1% difference in the final velocities of these dropped objects (an answer that is very wrong). However, you should not have compared your answer found from a differential solver to the "exact" solution - hitting the 1% threshold may have been an approximation artifact from the solver. You should compare solutions derived from the same method.
+Another side note too: Don't get too "function happy", the runge-kutta is a cohesive algorithm, it is very unlikely that you will ever call individual lines of this algorithm, so there is no reason to break it into that many functions- it still works, but adds unnecessary coding.
